@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+    
+    
+    <bean name="address" class="com.jsp.amazon.Address" p:pincode="581600" p:state="karntaka" p:city="bangalore"/>
+    <bean name="person" class="com.jsp.amazon.Person" p:empno="101" p:name="raghu" p:contact="6362375016"  p:address-ref="address"/>
+    
+    <!-- property name="empno" value="101"/>
+    <property name="name" value="RAghu"/>
+    <property name="contact" value="8523697524"/>
+    <property name="address">
+    	<ref bean="address"/>
+     
+   
+    </property>-->
+    
+    
+    
+    
+    
+	
+
+</beans>

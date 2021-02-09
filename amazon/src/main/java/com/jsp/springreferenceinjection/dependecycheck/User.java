@@ -10,7 +10,7 @@ public class User {
 		return email;
 	}
 	
-	@Required
+	@Required// by defauly the required annotation will be disable and make it enable by passing the RequiredAnnaotationPost processor by passing fully qualifiedname
 	public void setEmail(String email) {
 		this.email = email;
 	}
